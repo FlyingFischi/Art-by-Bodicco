@@ -168,7 +168,7 @@ nav a {
         font-size: 18px;
         margin-bottom: 5px; /* Änderung: Geringerer Abstand nach unten */
         margin-top: 0; /* Neue Regel: Kein Abstand nach oben mehr */
-        color: grey; /* Neue Regel: Textfarbe auf Grau setzen */
+        color: #000; /* Neue Regel: Textfarbe auf Grau setzen */
     }
 
     .image-overlay button {
