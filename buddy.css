@@ -159,30 +159,70 @@ nav a {
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
     .image-overlay {
-        top: 5%; /* Änderung: Größerer Abstand nach oben */
-        left: 5%; /* Änderung: Größerer Abstand nach links */
-        transform: translate(0, 0); /* Änderung: Keine Verschiebung mehr notwendig */
+        top: 5%;
+        left: 5%;
+        transform: translate(0, 0);
     }
 
     .image-overlay p {
         font-size: 18px;
-        margin-bottom: 5px; /* Änderung: Geringerer Abstand nach unten */
-        margin-top: 0; /* Neue Regel: Kein Abstand nach oben mehr */
-        color: #000; /* Neue Regel: Textfarbe auf Grau setzen */
+        margin-bottom: 5px;
+        margin-top: 0;
+        color: #000; /* Textfarbe auf Grau setzen */
     }
 
     .image-overlay button {
         padding: 10px 20px;
         font-size: 16px;
-        background-color: #fff; /* Änderung: Hintergrundfarbe anpassen */
-        color: grey; /* Änderung: Textfarbe auf Grau setzen */
+        background-color: #fff;
+        color: grey;
         border: 2px solid grey;
-        border-radius: 5px; /* Neue Regel: Abgerundete Ecken für den Button */
+        border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
     }
 
-    .image-overlay button:hover {
+    /* Anpassungen für den Shop-Bereich in der mobilen Ansicht */
+    .shop-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .shop-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .shop-item-name {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .shop-item button {
+        opacity: 0;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid grey;
+        padding: 10px;
+        cursor: pointer;
+        transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+        width: 80%; /* Anpassung: Breite des Buttons auf 80% setzen */
+        margin: 10px auto; /* Zentrieren des Buttons */
+    }
+
+    .shop-item:hover button {
+        opacity: 1;
+        background-color: #fff;
+        color: grey;
+    }
+
+    .shop-item button:hover {
         background-color: grey;
         color: #fff;
     }
@@ -205,7 +245,7 @@ nav a {
 .shop-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .shop-item {
@@ -247,6 +287,117 @@ nav a {
     background-color: grey;
     color: #fff;
 }
+
+/* Anpassungen für die mobile Ansicht */
+@media only screen and (max-width: 600px) {
+    .shop-item {
+        width: 100%;
+    }
+
+    .shop-item img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .shop-item-name {
+        margin: 10px; /* Abstand für den Namen verringern */
+    }
+
+    .shop-item button {
+        opacity: 1; /* Button standardmäßig sichtbar machen */
+        background-color: transparent; /* Hintergrundfarbe auf transparent setzen */
+        color: grey;
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        width: 100%;
+        margin-top: 10px; /* Abstand nach oben hinzufügen */
+    }
+
+    .shop-item button:hover {
+        background-color: grey;
+        color: #fff;
+    }
+}
+
+
+
+
+
+/* Aktualisierte Regel für Bilder in der shop-item-Klasse */
+.shop-item img {
+    width: 100%;
+    height: auto;
+    max-width: none; /* Änderung: max-width auf none setzen */
+}
+
+.shop-item-name {
+    font-size: 18px;
+    margin: 30px;
+}
+
+.shop-item button {
+    opacity: 0;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid grey;
+    padding: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.shop-item:hover button {
+    opacity: 1;
+    background-color: #fff;
+    color: grey;
+}
+
+.shop-item button:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+
+/* Aktualisierte Regel für Bilder in der shop-item-Klasse */
+.shop-item img {
+    width: 100%;
+    height: auto;
+    max-width: none; /* Änderung: max-width auf none setzen */
+}
+
+.shop-item-name {
+    font-size: 18px;
+    margin: 30px;
+}
+
+.shop-item button {
+    opacity: 0;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid grey;
+    padding: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.shop-item:hover button {
+    opacity: 1;
+    background-color: #fff;
+    color: grey;
+}
+
+.shop-item button:hover {
+    background-color: grey;
+    color: #fff;
+}
+
 
 footer {
     background-color: rgba(138, 81, 31, 0.703);
