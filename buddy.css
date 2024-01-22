@@ -158,18 +158,24 @@ nav a {
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
+    .image-overlay {
+        top: 5%; /* Änderung: Größerer Abstand nach oben */
+        left: 5%; /* Änderung: Größerer Abstand nach links */
+        transform: translate(0, 0); /* Änderung: Keine Verschiebung mehr notwendig */
+    }
+
     .image-overlay p {
         font-size: 18px;
         margin-bottom: 5px; /* Änderung: Geringerer Abstand nach unten */
-        margin-top: 20px; /* Neue Regel: Größerer Abstand nach oben */
-        color: #000;
+        margin-top: 0; /* Neue Regel: Kein Abstand nach oben mehr */
+        color: grey; /* Neue Regel: Textfarbe auf Grau setzen */
     }
 
     .image-overlay button {
         padding: 10px 20px;
         font-size: 16px;
         background-color: #fff; /* Änderung: Hintergrundfarbe anpassen */
-        color: grey; /* Änderung: Textfarbe anpassen */
+        color: grey; /* Änderung: Textfarbe auf Grau setzen */
         border: 2px solid grey;
         border-radius: 5px; /* Neue Regel: Abgerundete Ecken für den Button */
         cursor: pointer;
@@ -181,6 +187,7 @@ nav a {
         color: #fff;
     }
 }
+
 
 
 
