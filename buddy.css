@@ -17,23 +17,22 @@ header {
     display: flex;
     position: absolute;
     left: 10%;
-    top: 20px; /* Hier kannst du den gewünschten Abstand nach oben einstellen */
+    top: 20px;
 }
 
 .language-switch {
     margin-left: 10px;
 }
 
-/* Aktualisierte Styles für die Sprachauswahl */
 .language-switch select {
     padding: 5px;
-    border: 1px solid grey; /* Grauer Rahmen hinzufügen */
-    background-color: #fff; /* Weiße Hintergrundfarbe */
-    color: black; /* Schwarze Schriftfarbe */
+    border: 1px solid grey;
+    background-color: #fff;
+    color: black;
 }
 
 .language-switch select:hover {
-    color: grey; /* Graue Schriftfarbe bei Hover */
+    color: grey;
 }
 
 .user-actions {
@@ -41,7 +40,7 @@ header {
     position: absolute;
     font-size: 14px;
     right: 10%;
-    top: 20px; /* Hier kannst du den gewünschten Abstand nach oben einstellen */
+    top: 20px;
 }
 
 .user-actions a {
@@ -54,13 +53,13 @@ header {
     display: flex;
     position: absolute;
     right: 10%;
-    top: 10px; /* Hier kannst du den gewünschten Abstand nach oben einstellen */  
+    top: 10px;  
 }
 
 .cart-icon-container {
     position: absolute;
     display: inline-block;
-    top: 0px; /* Hier kannst du den gewünschten Abstand nach oben einstellen */
+    top: 0px;
 }
 
 .cart-icon {
@@ -91,13 +90,13 @@ header {
 }
 
 .abstract-art {
-    margin-top: 5px; /* Ändere den Wert nach Bedarf */
+    margin-top: 5px;
     font-size: 14px;
 }
 
 .title-line {
     width: 800px;
-    height: 0.8px; /* Ändere die Höhe auf 1px oder einen größeren Wert */
+    height: 0.8px;
     background-color: grey;
     margin: 10px auto;
 }
@@ -121,7 +120,7 @@ nav a {
 .image-section {
     position: relative;
     overflow: hidden;
-    height: 500px; /* Ändere die Höhe nach Bedarf, z.B., auf die gewünschte Pixelhöhe */
+    height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -129,7 +128,7 @@ nav a {
 
 .image-section img {
     width: 100%;
-    height: auto; /* Änderung: Die Höhe ist jetzt 'auto' */
+    height: auto;
 }
 
 .image-overlay {
@@ -138,7 +137,7 @@ nav a {
     left: 30%;
     transform: translate(-50%, -50%);
     text-align: left;
-    color: #fff; /* Textfarbe anpassen */
+    color: #fff;
     margin: 5px;
 }
 
@@ -150,11 +149,27 @@ nav a {
 
 .image-overlay button {
     padding: 10px 20px;
-    background-color: #fff; /* Hintergrundfarbe anpassen */
-    color: grey; /* Textfarbe anpassen */
+    background-color: #fff;
+    color: grey;
     border: none;
     cursor: pointer;
     font-size: 16px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .image-overlay p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .image-overlay button {
+        padding: 8px 16px;
+        font-size: 14px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 /* Spezifische Styles für die shop.html-Seite */
@@ -182,7 +197,7 @@ nav a {
 
 .shop-item img {
     width: 100%;
-    height: 400px; /* Ändere die Höhe nach Bedarf auf die gewünschte Pixelhöhe */
+    height: 400px;
     max-width: 100%;
 }
 
@@ -213,7 +228,6 @@ nav a {
     background-color: grey;
     color: #fff;
 }
-
 
 footer {
     background-color: rgba(138, 81, 31, 0.703);
