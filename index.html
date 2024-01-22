@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art by Bodicco</title>
+    <link rel="stylesheet" href="buddy.css">
+    <script src="buddy.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="social-language">
+            <!-- Instagram-Link -->
+            <a href="https://www.instagram.com/bodicco.official/" target="_blank">
+                <img src="Instagram_Glyph_Black.png" alt="Instagram" style="width: 25px; height: auto;">
+            </a>
+
+            <!-- Sprachauswahl -->
+            <div class="language-switch">
+                <select>
+                    <option value="de" selected>DE</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="user-actions">
+            <!-- Anmelden-Link -->
+            <a href="anmelden.html">Anmelden</a>
+        </div>
+        <div class="cart">
+            <!-- Warenkorb-Symbol -->
+            <a href="cart.html" id="cart-link">
+                <div class="cart-icon-container">
+                    <img src="card.png" alt="Warenkorb" class="cart-icon">
+                    <span id="cart-item-count">0</span>
+                </div>
+            </a>
+            
+    </header>
+
+    <main>
+        <section class="main-content">
+            <h1 class="site-title">ART BY BODICCO</h1>
+            <h5 class="abstract-art">ABSTRACT ART</h5>
+            <div class="title-line"></div>
+            <nav>
+                <!-- Links zu Shop, About und Contact -->
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Bildsektion hier einfügen -->
+        <section class="image-section">
+            <img src="bild_1_1.jpg" alt="Custom Artwork">
+            <div class="image-overlay">
+                <p>Gestalte dein</p>
+                <p>individuelles Kunstwerk</p>
+                <button onclick="updateCart('Produkt 1')">Los geht's</button>
+            </div>
+        </section>
+
+        <section class="shop-section">
+            <div class="shop-title">Shop</div>
+            <div class="shop-grid">
+                <div class="shop-item">
+                    <img src="produkt_1.jpg" alt="Produkt 1">
+                    <div class="shop-item-name">Produkt 1</div>
+                    <button onclick="updateCart('Produkt 1')">Hinzufügen zum Warenkorb</button>
+                </div>
+                <div class="shop-item">
+                    <img src="produkt_2.jpg" alt="Produkt 2">
+                    <div class="shop-item-name">Produkt 2</div>
+                    <button onclick="updateCart('Produkt 2')">Hinzufügen zum Warenkorb</button>
+                </div>
+                <div class="shop-item">
+                    <img src="produkt_3.jpg" alt="Produkt 3">
+                    <div class="shop-item-name">Produkt 3</div>
+                    <button onclick="updateCart('Produkt 3')">Hinzufügen zum Warenkorb</button>
+                </div>
+                <div class="shop-item">
+                    <img src="produkt_4.jpg" alt="Produkt 4">
+                    <div class="shop-item-name">Produkt 4</div>
+                    <button onclick="updateCart('Produkt 4')">Hinzufügen zum Warenkorb</button>
+                </div>
+                <div class="shop-item">
+                    <img src="produkt_5.jpg" alt="Produkt 5">
+                    <div class="shop-item-name">Produkt 5</div>
+                    <button onclick="updateCart('Produkt 5')">Hinzufügen zum Warenkorb</button>
+                </div>
+                <div class="shop-item">
+                    <img src="produkt_6.jpg" alt="Produkt 6">
+                    <div class="shop-item-name">Produkt 6</div>
+                    <button onclick="updateCart('Produkt 6')">Hinzufügen zum Warenkorb</button>
+                </div>
+                <!-- Hier können weitere Shop-Elemente hinzugefügt werden -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="faq.html">FAQ</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="shop-richtlinien.html">Shop Richtlinien</a>
+        </div>
+    </footer>
+
+</body>
+</html>

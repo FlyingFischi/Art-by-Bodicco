@@ -1,0 +1,236 @@
+/* Gemeinsame Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.social-language {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 20px; /* Hier kannst du den gewünschten Abstand nach oben einstellen */
+}
+
+.language-switch {
+    margin-left: 10px;
+}
+
+/* Aktualisierte Styles für die Sprachauswahl */
+.language-switch select {
+    padding: 5px;
+    border: 1px solid grey; /* Grauer Rahmen hinzufügen */
+    background-color: #fff; /* Weiße Hintergrundfarbe */
+    color: black; /* Schwarze Schriftfarbe */
+}
+
+.language-switch select:hover {
+    color: grey; /* Graue Schriftfarbe bei Hover */
+}
+
+.user-actions {
+    display: flex;
+    position: absolute;
+    font-size: 14px;
+    right: 10%;
+    top: 20px; /* Hier kannst du den gewünschten Abstand nach oben einstellen */
+}
+
+.user-actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: grey;
+}
+
+.cart {
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 10px; /* Hier kannst du den gewünschten Abstand nach oben einstellen */  
+}
+
+.cart-icon-container {
+    position: absolute;
+    display: inline-block;
+    top: 0px; /* Hier kannst du den gewünschten Abstand nach oben einstellen */
+}
+
+.cart-icon {
+    width: 40px;
+    height: auto;
+}
+
+#cart-item-count {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: grey;
+    font-weight: bold;
+}
+
+.main-content {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.site-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 5px;
+}
+
+.abstract-art {
+    margin-top: 5px; /* Ändere den Wert nach Bedarf */
+    font-size: 14px;
+}
+
+.title-line {
+    width: 800px;
+    height: 0.8px; /* Ändere die Höhe auf 1px oder einen größeren Wert */
+    background-color: grey;
+    margin: 10px auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+}
+
+/* Spezifische Styles für die Bildsektion */
+.image-section {
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Ändere die Höhe nach Bedarf, z.B., auf die gewünschte Pixelhöhe */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto; /* Änderung: Die Höhe ist jetzt 'auto' */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #fff; /* Textfarbe anpassen */
+    margin: 5px;
+}
+
+.image-overlay p {
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.image-overlay button {
+    padding: 10px 20px;
+    background-color: #fff; /* Hintergrundfarbe anpassen */
+    color: grey; /* Textfarbe anpassen */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Spezifische Styles für die shop.html-Seite */
+.shop-section {
+    padding: 50px;
+}
+
+.shop-title {
+    font-size: 24px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.shop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop-item {
+    text-align: center;
+    margin-bottom: 20px;
+    width: calc(30% - 20px);
+}
+
+.shop-item img {
+    width: 100%;
+    height: 400px; /* Ändere die Höhe nach Bedarf auf die gewünschte Pixelhöhe */
+    max-width: 100%;
+}
+
+.shop-item-name {
+    font-size: 18px;
+    margin: 30px;
+}
+
+.shop-item button {
+    opacity: 0;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid grey;
+    padding: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.shop-item:hover button {
+    opacity: 1;
+    background-color: #fff;
+    color: grey;
+}
+
+.shop-item button:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+
+footer {
+    background-color: rgba(138, 81, 31, 0.703);
+    text-align: center;
+    padding: 20px;
+    position: auto;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
