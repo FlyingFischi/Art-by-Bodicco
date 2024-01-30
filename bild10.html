@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bild 10 | Art by Bodicco</title>
+    <!-- In den Head-Bereich der Webseite einfügen -->
+    <link href="https://db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=Brandon+Grot+W01+Light" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/643121b5d2cc9943eff9b59054cc29ba?family=DIN+Next+Rounded+LT+W01+Light" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/1b59b45496869bb64487738165f9ba76?family=DIN+W02+Light" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/buddy.css">
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/buddy.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="social-language">
+            <!-- Instagram-Link -->
+            <a href="https://www.instagram.com/bodicco.official/" target="_blank">
+                <img src="Instagram_Glyph_Black.png" alt="Instagram" style="width: 30px; height: auto;">
+            </a>
+
+            <!-- Sprachauswahl -->
+            <div class="language-switch">
+                <select>
+                    <option value="de" selected>DE</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Kann bei Bedarf wieder aktiviert werden -->
+        <!--<div class="user-actions">-->
+            <!-- Anmelden-Link -->
+            <!--<a href="anmelden.html">Anmelden</a>
+        </div>-->
+
+        <div class="cart">
+            <!-- Warenkorb-Symbol -->
+            <a href="cart.html" id="cart-link">
+                <div class="cart-icon-container">
+                    <img src="icons8-shopping-bag-50(1).png" alt="Warenkorb" class="cart-icon">
+                    <span id="cart-item-count">0</span>
+                </div>
+            </a>
+            
+    </header>
+
+    <main>
+        <section class="main-content">
+            <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+            <h1 class="site-title">ART BY BODICCO</h1>
+            </a>            
+            <h5 class="abstract-art">TEXTURED ART</h5>
+            <div class="title-line"></div>
+            <nav>
+                <!-- Links zu Home, Shop, About und Contact -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallerie</a></li>
+                    <li><a href="aboutme.html">Über mich</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- NEUER BEREICH -->
+        <div class="navigation-bar">
+        <div class="left-links">
+            <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">Home |</a>
+            <span id="current-image-name">BILD10</span>
+        </div>
+        <div class="right-links">
+            <img src="left-arrow.png" alt="Zurück" class="arrow" style="width: 15px; height: auto;" data-direction="prev">
+            Zurück | Weiter <img src="right.png" alt="Weiter" class="arrow" style="width: 15px; height: auto;" data-direction="next">
+        </div>
+        
+        </div>
+        <!-- ENDE DES NEUEN BEREICHS -->       
+
+        
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images_bodi/image10.jpeg" alt="Dein Bild">
+            </div>
+            <div class="product-text">
+
+                <h3>BILD 10</h3>
+                <h2>1200,00 €</h2>       
+
+                <button onclick="updateCart('Produkt 1')">Hinzufügen zum Warenkorb</button>               
+
+                <h4>Versand und Lieferung</h4>
+
+                <p>Der Versand erfolgt unmittelbar nach Zahlungseingang. Die Versandkosten berechnen sich anhand 
+                von Gewicht und Volumen und betragen innerhalb von Deutschland 45€ und außerhalb von Deutschland 65€.</p>
+
+                <div class="product-line">
+                </div>
+ 
+                <h4>Zahlungsmethode</h4>
+                
+                <ul class="bottom">
+                    <li>Kredit- und Debitkarten</li>
+                    <li>Giropay</li>
+                    <li>Paypal</li>
+                </ul> 
+                <div class="product-line"> 
+                </div>
+
+                <h4>Beschreibung</h4>
+                <p>120x80 cm</p>
+                <p>Handgefertigt - Acryl, Texturpaste auf Leinwand.</p>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="faq.html">FAQ</a>
+            <a href="impressum.html">IMPRESSUM</a>
+            <a href="shop-richtlinien.html">SHOP RICHTLINIEN</a>
+        </div>
+    </footer>
+ </body>
+</html>

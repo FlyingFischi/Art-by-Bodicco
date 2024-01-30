@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Art by Bodicco</title>
+    <!-- In den Head-Bereich der Webseite einfügen -->
+    <link href="https://db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=Brandon+Grot+W01+Light" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/643121b5d2cc9943eff9b59054cc29ba?family=DIN+Next+Rounded+LT+W01+Light" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/1b59b45496869bb64487738165f9ba76?family=DIN+W02+Light" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/buddy.css">
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/buddy.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="social-language">
+            <!-- Instagram-Link -->
+            <a href="https://www.instagram.com/bodicco.official/" target="_blank">
+                <img src="Instagram_Glyph_Black.png" alt="Instagram" style="width: 30px; height: auto;">
+            </a>
+
+            <!-- Sprachauswahl -->
+            <div class="language-switch">
+                <select>
+                    <option value="de" selected>DE</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Kann bei Bedarf wieder aktiviert werden -->
+        <!--<div class="user-actions">-->
+            <!-- Anmelden-Link -->
+            <!--<a href="anmelden.html">Anmelden</a>
+        </div>-->
+
+        <div class="cart">
+            <!-- Warenkorb-Symbol -->
+            <a href="cart.html" id="cart-link">
+                <div class="cart-icon-container">
+                    <img src="icons8-shopping-bag-50(1).png" alt="Warenkorb" class="cart-icon">
+                    <span id="cart-item-count">0</span>
+                </div>
+            </a>
+            
+    </header>
+
+    <main>
+        <section class="main-content">
+            <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+            <h1 class="site-title">ART BY BODICCO</h1>
+            </a>            
+            <h5 class="abstract-art">TEXTURED ART</h5>
+            <div class="title-line"></div>
+            <nav>
+                <!-- Links zu Home, Shop, About und Contact -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallerie</a></li>
+                    <li><a href="aboutme.html">Über mich</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section class="shop-section">
+            <div class="shop-title">Gallerie</div>
+            <div class="shop-grid">
+
+                <div class="shop-item">
+                    <a href="Bild1.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image1.jpeg" alt="Produkt 1">
+                        <div class="shop-item-name">BILD 1</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 1')">Hinzufügen zum Warenkorb</button>
+                </div>
+                
+                <div class="shop-item">
+                    <a href="Bild2.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image2.jpeg" alt="Produkt 2">
+                        <div class="shop-item-name">BILD 2</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 2')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="Bild3.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image3.jpeg" alt="Produkt 3">
+                        <div class="shop-item-name">BILD 3</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 3')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="Bild4.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image4.jpeg" alt="Produkt 4">
+                        <div class="shop-item-name">BILD 4</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 4')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="Bild5.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image5.jpeg" alt="Produkt 5">
+                        <div class="shop-item-name">BILD 5</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 5')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="Bild6.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image6.jpeg" alt="Produkt 6">
+                        <div class="shop-item-name">BILD 6</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 6')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="bild7.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image7.jpeg" alt="Produkt 7">
+                        <div class="shop-item-name">BILD 7</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 7')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="Bild8.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image8.jpeg" alt="Produkt 8">
+                        <div class="shop-item-name">BILD 8</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 8')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="Bild9.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image9.jpeg" alt="Produkt 9">
+                        <div class="shop-item-name">BILD 9</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 9')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="bild10.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image10.jpeg" alt="Produkt 10">
+                        <div class="shop-item-name">BILD 10</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 10')">Hinzufügen zum Warenkorb</button>
+                </div>
+
+                <div class="shop-item">
+                    <a href="bild11.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        <img src="images_bodi/image11.jpeg" alt="Produkt 11">
+                        <div class="shop-item-name">BILD 11</div>
+                    </a>
+                    <button onclick="updateCart('Produkt 11')">Hinzufügen zum Warenkorb</button>
+                </div>
+                <!-- Hier können weitere Shop-Elemente hinzugefügt werden -->
+
+                <!-- Unsichtbares Element für Ausrichtung -->
+                <div class="invisible-filler"></div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="faq.html">FAQ</a>
+            <a href="impressum.html">IMPRESSUM</a>
+            <a href="shop-richtlinien.html">SHOP RICHTLINIEN</a>
+        </div>
+    </footer>
+
+</body>
+</html>

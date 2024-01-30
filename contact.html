@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Art by Bodicco</title>
+    <!-- In den Head-Bereich der Webseite einfügen -->
+    <link href="https://db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=Brandon+Grot+W01+Light" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/643121b5d2cc9943eff9b59054cc29ba?family=DIN+Next+Rounded+LT+W01+Light" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/1b59b45496869bb64487738165f9ba76?family=DIN+W02+Light" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/buddy.css">
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/buddy.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="social-language">
+            <!-- Instagram-Link -->
+            <a href="https://www.instagram.com/bodicco.official/" target="_blank">
+                <img src="Instagram_Glyph_Black.png" alt="Instagram" style="width: 30px; height: auto;">
+            </a>
+
+            <!-- Sprachauswahl -->
+            <div class="language-switch">
+                <select>
+                    <option value="de" selected>DE</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Kann bei Bedarf wieder aktiviert werden -->
+        <!--<div class="user-actions">-->
+            <!-- Anmelden-Link -->
+            <!--<a href="anmelden.html">Anmelden</a>
+        </div>-->
+
+        <div class="cart">
+            <!-- Warenkorb-Symbol -->
+            <a href="cart.html" id="cart-link">
+                <div class="cart-icon-container">
+                    <img src="icons8-shopping-bag-50(1).png" alt="Warenkorb" class="cart-icon">
+                    <span id="cart-item-count">0</span>
+                </div>
+            </a>
+            
+    </header>
+
+    <main>
+        <section class="main-content">
+            <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+            <h1 class="site-title">ART BY BODICCO</h1>
+            </a>            
+            <h5 class="abstract-art">TEXTURED ART</h5>
+            <div class="title-line"></div>
+            <nav>
+                <!-- Links zu Home, Shop, About und Contact -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallerie</a></li>
+                    <li><a href="aboutme.html">Über mich</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="faq-section">
+            <div class="about-me-title">Kontakt</div>
+        </section>
+        
+        <!-- Einleitungstext -->
+        <div class="contact-intro">      
+            <p>Hier können Sie mich kontaktieren. Füllen Sie einfach das Formular unten aus.</p>
+        </div>
+        
+        <!-- Gesamtcontainer für Kontaktdaten und Kontaktformular -->
+        <div class="contact-section">
+            <div class="contact-details-container">
+                <div class="contact-details">
+                    <div class="contact-left">
+                        <p>Email</p>
+                        <p><a href="mailto:info@example.com">info@example.com</a></p>
+                    </div>
+                    <div class="contact-right">
+                        <p>Social Media</p>
+                        <!-- Hier kann der Link zu Ihrer Instagram-Seite eingefügt werden -->
+                        <a href="https://www.instagram.com/bodicco.official/" target="_blank">
+                            <img src="Instagram_Glyph_Black.png" alt="Instagram" style="width: 20px; height: auto;">
+                        </a>
+                    </div>                 
+                </div>
+            </div>
+
+        <!-- Kontaktformular -->
+        <form action="send.php" method="post" class="contact-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstname">Vorname</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Nachname</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reference">Referenzwerk</label>
+                    <input type="text" id="reference" name="reference">
+                </div>
+                <div class="form-group">
+                    <label for="size">Wunschgröße</label>
+                    <input type="text" id="size" name="size">
+                </div>
+                <div class="form-group">
+                    <label for="colors">Wunschfarben</label>
+                    <input type="text" id="colors" name="colors">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="consent">
+                        Rahmen
+                    </label>
+                </div>
+            </div>
+
+            <p class="invisible"></p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="notes">Weitere Notizen (Stückzahl, weitere Wünsche etc.)</label>
+                    <textarea id="notes" name="notes" rows="4" maxlength="1000"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="consent" required>
+                        Ich bin damit einverstanden, dass meine Daten zum Zweck der Kontaktaufnahme gespeichert und verarbeitet werden.
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Senden</button>
+            </div>
+        </form>
+        </div>
+    </main>
+      
+
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="faq.html">FAQ</a>
+            <a href="impressum.html">IMPRESSUM</a>
+            <a href="shop-richtlinien.html">SHOP RICHTLINIEN</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
